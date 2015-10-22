@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../static/css/base.css">
+		<title>Composer</title>
+		<meta name="csrf" content="{{ csrf_token }}">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="title-container" id="title">
+						Composer
+					</div>	
+					<hr>
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div id="composer" class="composer-container">
+						<input id="input-entry-title" type="text" class="form-control" placeholder="Title">
+						<textarea id="input-entry-text" class="form-control" placeholder="Body" rows="10"></textarea>
+						<div id="submit-entry">SUBMIT</div>
+					</div>	
+				</div> 
+			</div>	
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/JSXTransformer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+	<script type="text/jsx;harmony=true" src="../../static/js/composer.js"></script>
+</html>
