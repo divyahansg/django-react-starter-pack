@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../../static/css/base.css">
-		<title>My Blog</title>
-		<meta name="entry-id" content="{{ entry_id }}">
-		<meta name="csrf" content="{{ csrf_token }}">
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="title-container" id="title">
-						Sample Blog
-					</div>	
-					<hr>
-				</div> 
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div id="entry" class="entries-container">
-					</div>	
-				</div> 
-			</div>	
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="comments-title">Comments</div>
-					<div id="comments" class="comments-container">
-					</div>	
-					<div class="add-comment"></div>
-						<input id="input-comment-name" type="text" class="form-control" placeholder="Name">
-						<textarea id="input-comment-text" class="form-control" placeholder="Comment" rows="3"></textarea>
-						<div id="submit-comment">SUBMIT</div>
-					</div>
-				</div> 
-			</div>	
-		</div>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/JSXTransformer.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-	<script type="text/jsx;harmony=true" src="../../static/js/entry.js"></script>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <title>My Blog</title>
+    <meta name="entry-id" content="{{ entry_id }}">
+    <meta name="csrf" content="{{ csrf_token }}">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="title-container" id="title">
+            Sample Blog
+          </div>  
+          <hr>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="entry" class="entries-container">
+          </div>  
+        </div> 
+      </div>  
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="comments-title">Comments</div>
+          <div id="comments" class="comments-container">
+          </div>  
+          <div class="add-comment"></div>
+            <input id="input-comment-name" type="text" class="form-control" placeholder="Name">
+            <textarea id="input-comment-text" class="form-control" placeholder="Comment" rows="3"></textarea>
+            <div id="submit-comment">SUBMIT</div>
+          </div>
+        </div> 
+      </div>  
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/JSXTransformer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <script type="text/jsx;harmony=true" src="../../static/js/entry.js"></script>
 </html>

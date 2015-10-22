@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$("#submit-entry").click(function(e) {
+  $("#submit-entry").click(function(e) {
     var csrf = $('meta[name=csrf]').attr("content");
-		var title = $("#input-entry-title").val();
-		var text = $("#input-entry-text").val();
-		var data = {"title": title, "text": text};
+    var title = $("#input-entry-title").val();
+    var text = $("#input-entry-text").val();
+    var data = {"title": title, "text": text};
     $.ajax({
       url: "/blog/api/entries/add",
       dataType: 'json',
@@ -20,6 +20,6 @@ $(document).ready(function() {
       }.bind(this),
       error: function(xhr, status, err) {
       }.bind(this)
-    }); 	 
-	});
+    });    
+  });
 });

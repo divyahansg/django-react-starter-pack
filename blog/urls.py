@@ -19,5 +19,5 @@ from django.contrib import admin
 urlpatterns = [
   url(r'^admin/', include(admin.site.urls)),
   url(r'^blog/', include('blog_app.urls')),
-	url(r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'admin/login.html'},name="my_login")
+  url(r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'admin/login.html'},name="my_login")
 ]
