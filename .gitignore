@@ -4,4 +4,5 @@ bin/
 include/
 lib/
 pip-selfcheck.json
-*.db
+*.sqlite3
+*.Python
